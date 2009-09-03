@@ -7,11 +7,15 @@ This will let you execute Prototype based JavaScript code from your MAC OS termi
 
 ### Setup
 
+First, you need to create a shortcut to JavaScriptCore framework:
+
+    sudo ln /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc /bin/jsc
+
+Then download and exceute the project:
+
     # clone this project
     git clone git://github.com/aemkei/JSC-Prototype.git
     cd JSC-Prototype/
-    # set shortcut to JavaScriptCore framework
-    sudo ln /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc /bin/jsc
     # run sample application
     jsc sample.js -- one two three
 
